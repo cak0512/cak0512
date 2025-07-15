@@ -79,3 +79,13 @@ canvas.addEventListener('mouseleave', () => {
     dragging = false;
     document.body.classList.remove('dragging');
 });
+
+// 3秒後に非表示
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const title = document.getElementById('title');
+    if (title) {
+      title.style.display = 'none';
+    }
+  }, 3000); 
+});
